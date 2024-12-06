@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Funnel+Display:wght@300..800&family=Geist+Mono:wght@100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div id="starting" class="starting">
+          <img src="Image/weather-forecast.png" alt="" />
+          <h4>Search city</h4>
+          <h5>
+            Find out the weather conditions <br />
+            of the city
+          </h5>
+        </div>
+        <div id="left-main" class="left-main">
+          <h1 id="day"></h1>
+          <p id="date"></p>
+          <div id="img-box" class="img-box"></div>
+          <h2 id="tempmain"></h2>
+          <h3 id="condition"></h3>
+        </div>
+      </div>
+      <div class="right">
+        <div class="inputbox">
+          <input id="input" type="text" placeholder="Search Location" />
+          <button id="btn">Search</button>
+        </div>
+        <div id="starting-right" class="starting-right">
+          <img src="Image/cloud-computing.png" alt="" />
+          <h1>search city...</h1>
+        </div>
+        <div id="errorbox" class="error-box">
+          <img src="Image/error-404.png" alt="" />
+          <div class="error-text-box">
+            <h2>Error</h2>
+            <h5>City not found !!</h5>
+          </div>
+        </div>
+        <div id="rightbox" class="right-box">
+          <div class="box flag">
+            <h6 id="country">COUNTRY :</h6>
+            <div id="flagimg" class="flagimg">
+              <p id="countrycode"></p>
+              <img id="flag" src="https://flagsapi.com/BE/flat/64.png" />
+            </div>
+          </div>
+          <div class="box">
+            <h6>NAME :</h6>
+            <p id="name">Dubai</p>
+          </div>
+          <div class="box">
+            <h6>TEMP :</h6>
+            <p id="temp">23°C</p>
+          </div>
+          <div class="box">
+            <h6>HUMIDITY :</h6>
+            <p id="humidity">68%</p>
+          </div>
+          <div class="box">
+            <h6>WIND SPEED :</h6>
+            <p id="windspeed">1.66 Km/h</p>
+          </div>
+
+          <h1 id="forecast">4 Day Forecast</h1>
+          <div class="weatherbox">
+            <div class="box1">
+              <div id="img-box1" class="img-box1"></div>
+              <h4 id="first-box-day"></h4>
+              <h5 id="first-box-temp"></h5>
+              <h6 id="first-box-des">overcast clouds</h6>
+            </div>
+            <div class="box1">
+              <div id="img-box2" class="img-box1"></div>
+              <h4 id="first-box-day2"></h4>
+              <h5 id="first-box-temp2"></h5>
+              <h6 id="first-box-des2">overcast clouds</h6>
+            </div>
+            <div class="box1">
+              <div id="img-box3" class="img-box1"></div>
+              <h4 id="first-box-day3"></h4>
+              <h5 id="first-box-temp3"></h5>
+              <h6 id="first-box-des3">overcast clouds</h6>
+            </div>
+            <div class="box1">
+              <div id="img-box4" class="img-box1"></div>
+              <h4 id="first-box-day4"></h4>
+              <h5 id="first-box-temp4"></h5>
+              <h6 id="first-box-des4">overcast clouds</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
